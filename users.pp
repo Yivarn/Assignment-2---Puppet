@@ -7,7 +7,7 @@ class users
     group{ "trucks":
         ensure => present
     }
-    group{ "ambulance":
+    group{ "ambulances":
         ensure => present
     }
     group{ "sysadmin":
@@ -18,7 +18,7 @@ class users
     user { "becca":
         #name => "becca", # Needed?
         ensure => present,
-        home => "/home/becca"
+        home => "/home/becca",
         groups => ["sysadmin", "cars"],
         #managepassword => true,
         #encrypted password ??
@@ -28,7 +28,7 @@ class users
     user { "fred":
         #name => "fred", # Needed?
         ensure => present,
-        home => "/home/fred"
+        home => "/home/fred",
         groups => ["cars", "trucks"],
         #managepassword => true,
         #encrypted password ??
@@ -38,7 +38,7 @@ class users
     user { "wilma":
         #name => "wilma", # Needed?
         ensure => present,
-        home => "/home/wilma"
+        home => "/home/wilma",
         groups => ["cars", "trucks", "ambulances"],
         #managepassword => true, # Syntax??
         #encrypted password ??
