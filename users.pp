@@ -16,33 +16,33 @@ class users
     
     # User Config:
     user { "becca":
-        #name => "becca", # Needed?
+        name => "becca",
+	comment => "becca's account",
         ensure => present,
         home => "/home/becca",
         groups => ["sysadmin", "cars"],
-        #managepassword => true,
-        #encrypted password ??
+	managehome => true,
         uid => 10017699,
-        shell => "/bin/bash"
+        shell => "/bin/bash",
     }
     user { "fred":
-        #name => "fred", # Needed?
+        name => "fred",
         ensure => present,
         home => "/home/fred",
         groups => ["cars", "trucks"],
-        #managepassword => true,
         #encrypted password ??
         #uid => 10027699, # Required??
+	managehome => true,
         shell => "/bin/csh"
     }
     user { "wilma":
-        #name => "wilma", # Needed?
+        name => "wilma", # Needed?
         ensure => present,
         home => "/home/wilma",
         groups => ["cars", "trucks", "ambulances"],
-        #managepassword => true, # Syntax??
         #encrypted password ??
         uid => 10037699,
+	managehome => true,
         shell => "/bin/csh"
         #puppet managed ssh key ????
     }
