@@ -40,6 +40,7 @@ class users
         ensure => present,
         home => "/home/wilma",
         groups => ["cars", "trucks", "ambulances"],
+#password => pw_hash('password', 'SHA-512', 'mysalt'),
         #encrypted password ??
         uid => 10037699,
 	managehome => true,

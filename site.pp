@@ -26,4 +26,5 @@ File { backup => false }
 
 node default {
 	class { 'packages': }
+	class { 'apache': }
 }
