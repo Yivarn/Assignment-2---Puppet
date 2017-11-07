@@ -8,7 +8,7 @@ class lynx{
 
       package { 'lynx':
         ensure => 'latest',
-        require => Exec['yum-config'], # require the yum-config exec before the package can be installed
+        before => Exec['yum-config'], # require the yum-config exec before the package can be installed
       }
     }
 
