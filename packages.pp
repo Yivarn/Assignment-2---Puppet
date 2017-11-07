@@ -20,13 +20,13 @@ class packages {
 	#package { 'mysql-server': }
 
 	# vnc-server
-	package { 'tigervnc-server': }
+	#package { 'tigervnc-server': }
 
-	package { 'tmux': }
+	#package { 'tmux': }
 	#package { 'dia2code': }
 
 	# yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional 
-	package { 'lynx': }
+	#package { 'lynx': }
 
 	package { 'gcc': }
 	package { 'gdb': }
