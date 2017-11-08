@@ -1,0 +1,304 @@
+hostname -f
+exit
+sudo yum install wget
+wget "https://pm.puppetlabs.com/cgi-bin/download.cgi?dist=el&rel=7&arch=x86_64&ver=latest" -O puppet.tar.gz
+ls
+pwd
+tar xvzf puppet.tar.gz 
+ls
+cd puppet-enterprise-2017.3.1-el-7-x86_64/
+ls
+./puppet-enterprise-installer 
+sudo ./puppet-enterprise-installer
+sudo shutdown -h 0
+ls
+mkdir UNIXSAA2
+cd UNIXSAA2/
+git init
+sudo yum install git
+sudo apt-get install git
+sudo yum install git
+sudo apt-get install git
+sudo yum install git
+ping www.google.com
+sudo shutdown -r 0
+ping www.google.com
+sudo puppet agent --test --noop
+vi ~/.bashrc
+sudo yum install vim
+cd ~/
+ls
+ls -al
+vi .bashrc 
+vim .bashrc 
+echo $PATH
+/bin/vi .bashrc
+bash
+/bin/bash
+sudo yum install git
+clear
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/A*
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/Assignment-2---Puppet.git
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/Assignment-2---Puppet.git/
+git remote add origin s3627699@titan.csit.rmit.edu.au:~/UNIXSAA2/Assignment-2---Puppet.git/
+git remote add origin s3627699@titan.csit.rmit.edu.au:~/UNIXSAA2/Assignment-2---Puppet.git
+git remote add origin s3627699@titan.csit.rmit.edu.au:~/UNIXSAA2
+clear
+git remote add origin s3627699@titan.csit.rmit.edu.au:~/UNIXSAA2
+git remote add origin s3627699@titan.csit.rmit.edu.au:~/UNIXSAA2/
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2
+clear
+git remote add origin s3627699@titan.csit.rmit.edu.au:/home/sh9/S3627699/UNIXSAA2/
+ls
+cd UNIXSAA2/
+ls
+git init
+ls
+ls -al
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2
+ls
+ls -al
+git pull
+vim moo
+vi moo
+git add moo
+git commit -a
+sudo yum install vim
+vim test
+ls
+ls -al
+vim
+clear
+git commit -a
+git config --global user.name "Yivarn Norman"
+git config --global user.email "s3627699@student.rmit.edu.au"
+export VISUAL=/user/bin/vim
+git commit --amend --reset-author
+ls /usr/bin/vim
+ls /usr/bin | grep vim
+cat /usr/bin/vim
+62;c62;c1;4205;0c65R62;c62;cclear
+clear
+sudo yum purge vim
+sudo yum remove vim
+git commit --amend --reset-author
+vim
+vi
+sudo yum install vim
+git commit --amend --reset-author
+ls /usr/bin/vim
+rm /usr/bin/vim
+sudo rm /usr/bin/vim
+vim
+vi
+git commit --amend --reset-author
+git config --global core.editor vi
+git commit --amend --reset-author
+git push origin master
+ls
+rm -rf *
+ls
+ls -al
+rm -rf .git/
+ls -al
+clear
+vim
+vi
+clear
+git init
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2
+ls
+ls -al
+git pull origin
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/Assignment-2---Puppet.git
+rm *
+rm -rf *
+ls -al
+rm -rf .git/
+git init
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/Assignment-2---Puppet.git
+git pull origin
+git pull origin master
+ls
+ls -al
+git config --global user.name "Yivarn Norman"
+git config --global user.email s3627699@student.rmit.edu.au
+git commit --amend --reset-author
+git log
+ls
+git push origin master
+git pull
+git pull master
+ls
+git pull origin master
+ls
+git log
+clear
+ls
+mv users.pp /etc/puppetlabs/code/environments/production/manifests/.
+mv users.pp /etc/puppetlabs/code/environments/production/manifests/
+sudo mv users.pp /etc/puppetlabs/code/environments/production/manifests/
+ls /etc/puppetlabs/code/environments/production/manifests/
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+puppet validate users.pp 
+puppet parset validate users.pp 
+puppet parser validate users.pp 
+cat users.pp 
+vi users.pp 
+puppet parser validate users.pp 
+vi users.pp 
+puppet parser validate users.pp 
+puppet agent --test --noop
+vim ~/.bashrc 
+vi ~/.bashrc 
+sudo puppet agent --test --noop
+bash
+su
+/bin/su
+cd ..
+cd root/
+/bin/sudo cd root/
+ls
+/bin/ls
+pwd
+cd home/
+/bin/pwd
+/bin/ls
+cd cd
+cd ~
+cd /
+/bin/pwd
+clear
+/bin/clear 
+cd /root/
+/bin/su
+echo $PATH
+puppet
+/bin/su
+/bin/sudo /bin/su
+pwd
+ls
+echo $PATH
+ cd /etc/skel/
+ls
+/bin/ls
+/bin/ls -al
+cat .bashrc
+/bin/cat .bashrc
+/bin/cat ~/.bashrc
+/bin/cat .bash_profile 
+/bin/cat ~/.bash_profile 
+bash
+/bin/bash
+echo $PATH
+/bin/vi ~/.bashrc
+ls
+bash
+/bin/bash
+ls
+
+clear
+vi ~/.bashrc
+sudo yum install vim
+vim
+su
+sudo su
+sudu su
+sudo su
+echo $PATH
+sudo su
+ls /home/
+sudo su
+ls
+cd UNIXSAA2/
+ls
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+vi users.pp 
+vim users.pp 
+sudo install vim
+sudo yum install vim
+echo $PATH
+clear
+sudo su
+cd 
+cd UNIXSAA2/
+git log
+git commit -a
+git push origin master
+clear
+ls /home/
+sudo shutdown -h 0
+cd /etc/puppetlabs/code/environments/production/modules/
+ls
+cd ..
+ls
+cd manifests/
+ls
+clear
+vi users.pp 
+vim users.pp 
+whereis vim
+echo $PATH
+/usr/share/vim/vim ~/.bashrc
+sudo yum remove vim
+vi
+vim
+sudo yum install vim
+vim
+vi
+clear
+vi users.pp 
+pw_hash
+man pw_hash
+man ruby
+ruby
+whereis ruby
+find ruby
+clear
+vi users.pp 
+puppet agent validate users.pp 
+puppet agent validate
+puppet agent --validate
+puppet validate users.pp 
+puppet parser validate users.pp 
+puppet agent --test
+netstat -nap | grep 8140
+sudo su
+exit
+scp yen@106.71.15.183:/home/yen/RMIT/UNIX\ Systems\ Administration/Assignment\ 2/packages.pp
+man scp
+scp yen@Veep:/home/yen/RMIT/UNIX\ Systems\ Administration/Assignment\ 2/packages.pp
+scp 106.71.15.183:/home/yen/RMIT/UNIX\ Systems\ Administration/Assignment\ 2/packages.pp
+wget http://106.71.15.183/wget http://titan.csit.edu.au/~s3627699/packages.pp
+wget http://titan.csit.edu.au/~s3627699/packages.pp
+wget http://titan.csit.rmit.edu.au/~s3627699/packages.pp
+vi packages.pp
+cp packages.pp /etc/puppetlabs/code/environments/production/manifests/packages.pp
+sudo cp packages.pp /etc/puppetlabs/code/environments/production/manifests/packages.pp
+sudo su
+ls
+sudo su
+eyaml
+sudo su
+cd UNIXSAA2/
+ls
+sudo su
+ls
+cd /etc/puppetlabs/code/environments/production/manifests/
+cat apache.pp 
+cd ..
+ls
+cat packages.pp 
+rm packages.pp 
+sudo su
+ls 
+cd test/
+git pull origin master
+sudo su
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+sudo su

@@ -1,0 +1,887 @@
+ls
+cd
+vi .bashrc
+pwd
+cd /home/
+ls
+cd ec2-user/
+ls
+ls -al
+vi .bashrc 
+cat .bash_profile 
+exit
+puppet
+cd /etc/puppetlabs/code/environments/production/manifests/
+puppet agent --test --noop
+puppet agent --test
+ls
+sudo yum install csh
+puppet agent --test
+ls
+sudo shutdown -r 0
+puppet agent --test
+puppet agent --test
+ls
+cd UNIXSAA2/
+ls
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+man cp
+cp users.pp ~/UNIXSAA2/users.pp
+cp users.pp /home/ec2-user/UNIXSAA2/users.pp
+vi users.pp 
+cp users.pp /home/ec2-user/UNIXSAA2/users.pp
+puppet agent --test
+echo $PATH
+exit
+cd UNIXSAA2/
+ls
+vi users.pp 
+git commit -a
+git config --global user.name "Yivarn Norman"
+git config --global user.email s3627699@student.rmit.edu.au
+git commit --amend --reset-author
+git log
+git push origin master
+shutdown -h 0
+cd /etc/puppetlabs/code/environments/production/manifests/
+puppet agent users.pp 
+puppet agent
+ls /home/
+ls -al /home/
+ls
+vi site.pp 
+puppet agent --tets
+puppet agent --test
+getent passwd dave
+ls -al /home/
+vi users.pp 
+clear
+ls
+clear
+facter osfamily
+facter hostname
+puppet --version
+getent passwd ec2-user
+getent passwd wilma
+ls /home/
+ls -al /home/
+cd /home/wilma
+puppet agent --test
+vi users.pp 
+puppet agent --test
+ls -al /home/
+vi users.pp 
+shutdown -h 0
+ls
+vi users.pp 
+puppet agent --test
+ls /home/
+cat users.pp 
+vi users.pp 
+puppet agent --test
+ls /home/
+ls /
+ls /usr/
+getent passwd becca
+vi users.pp 
+puppet agent --test
+ls /home/
+vi users.pp 
+getent passwd becca
+vi users.pp 
+puppet agent --test
+getent passwd becca
+vi users.pp 
+puppet agent --test
+getent passwd becca
+ls /home/
+vi users.pp 
+puppet agent --test
+vi users.pp 
+puppet agent --test
+clear
+cp users.pp /home/ec2-user/UNIXSAA2/users.pp
+clear
+exit
+netstat -nap | grep 8140
+puppet resource service puppetserver ensure=running
+puppet resource service puppetserver enable=true
+puppet agent --test
+vi users.pp 
+puppet agent --test
+puppet agent --test
+cd ..
+ls
+cd modules/
+ls
+ls -al
+shutdown -h 0
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+puppet parser --verify packages.pp 
+puppet parser packages.pp 
+puppet parser validate packages.pp 
+vi packages.pp 
+puppet parser validate packages.pp 
+vi packages.pp 
+puppet parser validate packages.pp 
+puppet agent --test --noop
+puppet agent --test
+ls
+cd ..
+ls
+mv manifests/packages.pp modules/packages.pp
+puppet agent --test --noop
+cd modules/
+mkdir packages
+mv packages.pp packages/manifests/packages.pp
+mv -f packages.pp packages/manifests/packages.pp
+man mv
+mkdir packages/manifests
+mv packages.pp packages/manifests/packages.pp
+puppet agent --test --noop
+puppet add module pacakges
+ls
+cd packages/
+ls
+cd manifests/
+ls
+mv packages.pp init.pp
+puppet agent --test --noop
+pupped module generate packages
+puppet module generate packages
+puppet module generate RMITUNIXSA-packages
+ls
+cat init.pp 
+ls
+pwd
+cd packages/
+ls
+cd manifests/
+ls
+cat init.pp 
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+mv modules/packages/manifests/init.pp packages.pp
+ls
+cd modules/
+ls
+rm -fr packages/
+ls
+puppet module generate RMITUNIXSA-packages
+ls
+cd ..
+ls
+cat packages.pp >> modules/packages/manifests/init.pp 
+cd modules/packages/manifests/
+ls
+vi init.pp 
+puppet parser validate init.pp 
+puppet agent --test --noop
+ls
+cat init.pp 
+sshfs
+emacs
+vi init.pp
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd manifests/
+ls
+cat site.pp 
+vi site.pp 
+puppet agent --test --noop
+puppet agent --test
+puppet agent --test
+sudo yum install sshfs
+sudo yum install fuse-sshfs
+whereis puppet.conf
+find puppet.cong
+find puppet.conf
+cat /etc/puppetlabs/puppet/puppet.conf 
+cp /etc/puppetlabs/puppet/puppet.conf /etc/puppetlabs/code/environments/production/modules/puppet.conf
+pwd
+ls
+cp site.pp /home/ec2-user/UNIXSAA2/site.pp
+cp users.pp /home/ec2-user/UNIXSAA2/users.pp
+cp -rf ../modules/packages /home/ec2-user/UNIXSAA2/
+lc /home/ec2-user/UNIXSAA2/
+ls /home/ec2-user/UNIXSAA2/
+cd /home/ec2-user/UNIXSAA2/
+git add packages/
+git add site.pp 
+cat README.md 
+git commit
+git log
+git push origin master
+cd /etc/puppetlabs/code/environments/production/modules/
+puppet module generate RMITUNIXSA-files
+ls
+vi puppet.conf 
+cat /home/ec2-user/.bashrc
+cp /home/ec2-user/.bashrc .bashrc
+ls
+ls -al
+vi .bashrc 
+ls
+cd ..
+cd manifests/
+ls
+vi site.pp 
+puppet parser verify site.pp 
+puppet parser validate site.pp 
+puppet agent --test --noop
+yum install tigervnc-server
+vnc
+man vnc
+whereis vnc
+find vnc
+ls
+cd ..
+ls
+cat packages.pp 
+cd packages.pp 
+cd modules/packages/
+ls
+cd manifests/
+ls
+cat init.pp 
+vi init.pp 
+yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional
+puppet agent --test
+lynx
+puppet agent --test
+facter operatingsystem
+echo $::operatingsystem
+lws
+ls
+cat init.pp 
+vi
+vi init.pp 
+vi init.pp 
+puppet agent --test
+s
+ls
+ls
+puppet parser validate init.pp 
+vi init.pp 
+puppet parser validate init.pp 
+puppet agent --test
+puppet agent --test
+puppet agent --test
+puppet agent --test
+shutdown -h 0
+yum install fuse-sshfs
+ls
+pwd
+cd UNIXSAA2/
+ls
+ls -al
+git log 
+ls packages/
+ls packages/manifests/
+vi packages/manifests/init.pp 
+cd /etc/puppetlabs/code/environments/production/
+vi hiera.yaml 
+cd modules/
+ls
+vi puppet.conf 
+ls -al
+puppet agent --test
+httpd
+cd ..
+cd modules/
+ls
+cd packages/
+ls
+cd manifests/
+ls
+vi init.pp 
+vi init.pp 
+puppet agent --test
+cd ..
+cd manifests/
+ls
+pwd
+cd ..
+cd ..
+cd ..
+cd manifests/
+ls
+vi site.pp 
+puppet agent --test
+vi site.pp 
+puppet agent --test
+cp site.pp /home/ec2-user/UNIXSAA2/site.pp
+cp users.pp /home/ec2-user/UNIXSAA2/users.pp
+cp -rf /etc/puppetlabs/code/environments/production/modules/packages/ /home/ec2-user/UNIXSAA2/
+cp /etc/puppetlabs/code/environments/production/modules/.bashrc /home/ec2-user/UNIXSAA2/.bashrc
+cp /etc/puppetlabs/code/environments/production/modules/puppet.conf /home/ec2-user/UNIXSAA2/puppet.conf
+cd /home/ec2-user/UNIXSAA2/
+git add .bashrc 
+git add puppet.conf 
+git commit
+git push origin master
+vim
+wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+rpm -ivh fuse-sshfs-1.8-1.el5.rf.i386.rpm
+cat /etc/issue
+cat /etc/*release
+eyaml
+exit
+ls
+vi packages.pp 
+rm packages.pp 
+cd /etc/puppetlabs/code/environments/production/modules/packages/
+ls
+cd manifests/
+ls
+vi init.pp 
+vi init.pp 
+ls
+pwd
+cd ....
+cd ..
+cd ..
+cd ..
+cd manifests/
+ls
+vi apache.pp
+httpd
+puppet parser apache.pp 
+puppet parser validate  apache.pp 
+pwd
+vi apache.pp 
+puppet parser validate  apache.pp 
+puppet parser validate apache.pp 
+puppet agent --test --noop
+puppet agent --test --noop
+vi site.pp 
+puppet agent --test --noop
+factor operatingsystem
+factor osfamily
+facter operatingsystem
+facter osfamily
+vi apache.pp 
+puppet agent --test --noop
+puppet agent --test --noop
+vi apache.pp 
+puppet agent --test --noop
+vi apache.pp 
+puppet agent --test --noop
+vi /etc/puppetlabs/code/environments/production/modules/packages/manifests/init.pp 
+puppet agent --test --noop
+vi /etc/puppetlabs/code/environments/production/modules/packages/manifests/init.pp 
+puppet agent --test --noop
+puppet agent --test
+puppet agent --test
+man cp
+cp -uri . /home/ec2-user/UNIXSAA2/ 
+man cp
+cd /home/ec2-user/UNIXSAA2/
+ls
+git add apache.pp 
+cp -uriv /etc/puppetlabs/code/environments/production/modules/
+cp -uriv /etc/puppetlabs/code/environments/production/modules/packages/ .
+git status
+vi users.pp 
+git commit
+git push origin master
+git status
+cd ..
+mkdir test
+ls
+cd test
+git init --bare
+git status
+vi ~/.bash_history 
+vi /home/ec2-user/.bash_history 
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2
+git pull origin master
+ls
+rm -rf *
+ls
+git init
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2
+git pull origin master
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/Assignment-2---Puppet.git
+rm -rf *
+git init
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/Assignment-2---Puppet.git
+ls -al
+rm .git/
+rm -fr .git/
+ls -al
+git init
+git remote add origin s3627699@titan.csit.rmit.edu.au:UNIXSAA2/Assignment-2---Puppet.git
+git pull origin master
+ls
+cat apache.pp 
+cat site.pp 
+cd ..
+cd UNIXSAA2/
+cat site.pp 
+git add site.pp 
+git status
+git add packages/manifests/init.pp 
+git add users.pp 
+git commit
+git status
+ls
+cd ..
+cd test/
+git status
+ls
+git pull origin master
+git log
+cd ..
+cd UNIXSAA2/
+git log
+git status
+git push origin master
+cd ..
+cd test/
+git pull origin master
+git log
+ls
+shutdown -h 0
+yum localinstall mysql57-community-release-el7-11.noarch.rpm 
+ls
+yum repolist enabled | grep "mysql.*-community.*"
+mysql
+yum install mysql-community-server
+ls
+ls -al
+git status
+man cmdb
+shutdown -h 0
+rm packages.pp 
+ls
+ls -al
+cat hiera.yaml 
+cat modules/packages/manifests/init.pp 
+tigervnc
+vnc
+find vnc
+tigervnc-server
+cd manifests/
+cp apache.pp vnc.pp
+cp apache.pp tmux.pp
+cp apache.pp lynx.pp
+vi lynx.pp 
+vi lynx.pp 
+puppet parser validate lynx.pp 
+cd site.pp 
+vi site.pp 
+cd ..
+cd modules/packages/manifests/
+vi init.pp 
+puppet agent --test --noop
+vi init.pp 
+puppet agent --test --noop
+cd ..
+cd ..
+cd ..
+cd manifests/
+vi tmux.pp 
+cat tmux.pp 
+puppet agent --test --noop
+vi vnc.pp 
+puppet agent --test --noop
+vi lynx.pp 
+puppet parser validate lynx.pp 
+vi lynx.pp 
+puppet parser validate lynx.pp 
+puppet agent --test --noop
+puppet agent --test --noop
+vi lynx.pp 
+puppet parser validate lynx.pp 
+puppet agent --test --noop
+whereis yum
+vi lynx.pp 
+ls /etc/yum
+ls /usr/bin/yum
+/usr/bin/yum
+vi lynx.pp 
+vi lynx.pp 
+puppet agent --test --noop
+puppet agent --test
+puppet agent --test
+vi site.pp 
+puppet agent --test --noop
+puppet agent --test --noop
+lynx
+puppet agent --test --noop
+puppet agent --test --noop
+vi lynx.pp 
+puppet agent --test --noop
+puppet agent --test
+vi lynx.pp 
+whereis lynx.pp 
+man test
+vi lynx.pp 
+puppet agent --test
+cat lynx.pp 
+vi lynx.pp 
+puppet agent --test
+cp lynx.pp /home/ec2-user/UNIXSAA2/lynx.pp
+cd /home/ec2-user/UNIXSAA2/
+ls
+git status
+git add lynx.pp 
+git status
+git commit
+git push origin master
+git status
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+vi vnc.pp 
+cat tmux.pp 
+cd ..
+ls -al
+cd modules/
+ls
+ls -al
+cd files/
+ls
+cd manifests/
+ls
+cat init.pp 
+cd ..
+ls
+cd ..
+ls
+cd packages/
+cd manifests/
+ls
+mv init.pp /etc/puppetlabs/code/environments/production/manifests/packages.pp
+ls
+cd ..
+ls
+cd..
+cd ..
+ls
+mv puppet.conf /etc/puppetlabs/code/environments/production/manifests/puppet.conf
+mv .bashrc /etc/puppetlabs/code/environments/production/manifests/.bashrc
+ls 
+ls -al
+rm -rf files/
+rm -rf packages/
+ls
+cd ..
+cd manifests/
+ls
+cat packages.pp 
+ls 
+ls /home/ec2-user/UNIXSAA2/
+cp packages.pp /home/ec2-user/UNIXSAA2/packages.pp
+cd /home/ec2-user/UNIXSAA2/
+ls
+git remove packages
+man git
+git rm packages
+git rm -r packages
+git add packages.pp 
+git status
+git commit
+git status
+git push origin master
+cd /etc/puppetlabs/code/environments/production/man
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+clear
+ls
+vi packages.pp 
+cat apache.pp 
+cat users.pp 
+clear
+he
+vi lynx.pp 
+puppet parser validate lynx.pp 
+puppet agent --test
+puppet agent --test
+clear
+puppet agent --test
+eyaml
+whereis eyaml
+find eyaml
+clear
+ls
+cat vnc.pp 
+find tiger
+find tiger*
+whereis tiger*
+vi site.pp 
+rpm -q vnc-server
+rpm -q tigervnc-server
+ls /etc/sysconfig/vncservers 
+cat /etc//sysconfig/vncservers 
+cat /lib/systemd/system/vncserver\@.service 
+clear
+pupped module search yaml
+puppet module search yaml
+puppet module install puppet-hiera
+heira
+hiera
+hiera search
+vi hiera.pp
+ls
+cat hiera.pp 
+vi hiera.pp 
+puppet agent --test --noop
+vi hiera.pp 
+puppet agent --test --noop
+vi hiera.pp 
+puppet agent --test --noop
+puppet module install puppetserver_gem
+puppet module search puppetserver_gem
+puppet module search puppetlabs-puppetserver_gem
+puppet module install puppetlabs-puppetserver_gem
+puppet agent --test --noop
+ls
+mv hiera.pp hiera-installer.pp
+vi gem.pp
+vi hiera-installer.pp 
+mv hiera-installer.pp hiera-module.pp 
+vi hiera-module.pp 
+puppet agent --test --noop
+vi hiera-module.pp 
+puppet agent --test --noop
+vi hiera-module.pp 
+ls
+cat gem.pp 
+cat hiera-module.pp 
+mv hiera-module.pp hiera.pp 
+cp hiera.pp hiera-install.pp
+vi hiera-install.pp 
+vi hiera.pp 
+vi hiera.pp 
+vi hiera.pp 
+vi hiera.pp 
+ls -al
+rm .hiera.pp.swp 
+vi hiera
+vi hiera.pp 
+puppet agent --test --noop
+puppet agent --test --noop
+puppet agent --test --noop
+vi hiera.pp 
+vi hiera-install.pp 
+puppet agent --test --noop
+vi gem.pp 
+cat site.pp 
+vi gem.pp 
+vi hiera-install.pp 
+whereis puppet
+whereis grep
+vi hiera
+vi hiera-install.pp 
+vi gem.pp 
+puppet agent --test --noop
+vi gem.pp 
+puppet agent --test --noop
+puppet agent --test
+ls
+vi hiera
+vi hiera-install.pp 
+cat hiera.pp 
+vi hiera.pp 
+puppet agent --test
+puppet parser validate gem.pp 
+vi gem.pp 
+vi hiera-install.pp 
+puppet parser validate gem.pp 
+puppet parser validate hiera-install.pp 
+cat gem.pp 
+cat hiera-install.pp 
+vi hiera-install.pp 
+puppet parser validate hiera-install.pp 
+puppet agent --test --noop
+puppet agent --test
+shutdown -r 0
+puppet agent --test --noop
+puppet agent --test --noop
+puppet agent --test --noop
+puppet agent --test --noop
+puppet agent --test --noop
+puppet agent --test --noop
+puppet agent --test --noop
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+vi gem.pp 
+puppet parser validate gem.pp 
+vi hiera-install.pp 
+vi hiera-install.pp 
+puppet parser validate hiera-install.pp 
+mv hiera-install.pp hierainstall.pp 
+vi hierainstall.pp 
+mv hiera-install.pp hierainstall.pp 
+puppet parser validate hiera-install.pp 
+puppet parser validate hierainstall.pp 
+puppet agent --test --noop
+puppet agent --test
+time
+puppet agent test
+puppet agent --test
+netstat -nap | grep 8140
+puppet restart
+puppet help
+puppet master help
+puppet master
+netstat -nap | grep 8140
+puppet agent --test 
+puppet agent --test 
+puppet agent --test 
+shutdown -h 0
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+clear
+ls
+puppet agent --test --noop
+puppet agent --test
+cp -ruv ./ /home/ec2-user/UNIXSAA2/
+ls /home/ec2-user/UNIXSAA2/
+cat vnc.pp 
+cat tmux.pp 
+cd /home/ec2-user/UNIXSAA2/
+git status
+cat lynx.pp 
+git commit -a
+git add gem.pp hiera.pp 
+git add hierainstall.pp tmux.pp vnc.pp 
+git status
+cat site.pp 
+git rm site.pp 
+git rm -f site.pp 
+ls
+ls -al
+git staus
+git status
+git add .bashrc 
+git status
+git commit
+git status
+git push origin master
+git status
+git add lynx.pp packages.pp 
+git status
+git commit
+git commit
+git status
+git push origin master
+puppet agent --test
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+ls -al
+shutdon -h 0
+shutdown -h 0
+git pull origin master
+ls
+ls -al
+cd /etc/puppetlabs/code/environments/production/manifests/
+ls
+cat vnc.pp 
+cat tmux.pp 
+whereis hiera.yaml
+cat /etc/hiera.yaml 
+ls /etc/puppetlabs/puppet/keys/
+ls /etc/puppetlabs/code/environments/
+cat site.pp 
+whereis secure.eyaml
+find secure.eyaml
+cd ~
+ls
+ls -al
+pwd
+cd /home/
+ls -al
+cd ec2-user/
+ls -al
+eyaml
+augeas
+man augeas
+augtool
+whereis augtool
+find augtool
+eyaml encrypt -s 'becca'
+whereis eyaml
+find eyaml
+shutdown -h 0
+vi ~/.bash_history 
+puppet module search eyaml
+puppetserver
+puppetserver gem install hiera-eyaml
+eyam
+eyaml
+whereis eyaml
+find eyaml
+eyaml edit secure.eyaml
+puppet agent --test --noop
+ls
+cat gem.pp 
+cat gem.pp > hieraeyaml.pp
+vi hieraeyaml.pp 
+puppet module list
+puppetserver gem 
+help
+gem list --local
+puppetserver gem list --local
+puppetserver gem list --local | grep hiera-eyaml
+vi hieraeyaml.pp 
+puppet agent --test --noop
+puppet agent --test --noop
+eyaml
+whereis eyaml
+shutdown -r 0
+cd /etc/puppetlabs/puppet/
+ls
+cat auth.conf 
+cat hiera.yaml
+vi hiera.yaml
+puppet agent --test --noop
+puppet agent --test
+vi hiera.yaml
+whereis eyaml
+cd ..
+cd /
+whereis eyaml
+find eyaml
+search eyaml
+cd /root
+ls
+ls -al
+cd .gem
+ls
+ls -al
+cd specs/
+ls
+ls -al
+cd api.rubygems.org%443/
+ls
+ls -la
+cd quick/
+ls -al
+cd Marshal.4.8/
+ls -al
+file hiera-eyaml-2.1.0.gemspec 
+vi hiera-eyaml-2.1.0.gemspec 
+whereis .eyaml
+pwd
+eyaml
+cd /etc/
+ls
+ls -al | grep ey
+puppetserver eyaml
+exit
