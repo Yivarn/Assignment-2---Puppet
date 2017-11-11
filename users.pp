@@ -63,5 +63,27 @@ class users{
       key    => 'Hiera',
       require => User['wilma'],
     }
+
+    augeas { 'disable_root_ssh_logins':
+      context => "/files/etc/ssh/sshd_config",
+      changes => 'set PermitRootLogin no',
+    }
+
+    file { '/home/becca/titan/':
+      ensure => 'directory',
+      require => User['becca'],
+    }
+
+    mount { 'titan_sshfs':
+      name => '/home/becca/titan/',
+      ensure => 'mounted',
+      fstype => 'fuse.sshfs',
+      device => 's3627699@131.170.5.131:/',
+      options => 'defaults',
+      atboot => true,
+      remounts => true,
+      require => File['/home/becca/titan/'], 
+    }
+
 }
 
