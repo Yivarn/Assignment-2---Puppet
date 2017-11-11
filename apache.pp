@@ -9,4 +9,8 @@ class apache{
     ensure => 'latest',
     name => $distname,
   }
+
+  #file {
+  
+  #}
 }

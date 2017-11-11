@@ -11,10 +11,28 @@ class hieraeyaml {
   }
 
   exec { 'createkeys':
+    cwd => '/etc/puppetlabs/puppet/',
     command => 'eyaml createkeys',
     path => ['/opt/puppetlabs/puppet/bin/','/bin/'],
-    creates => '/opt/puppetlabs/puppet/bin/keys/private_key.pkcs7.pem',
+    creates => ['/etc/puppetlabs/puppet/keys/private_key.pkcs7.pem',
+                '/etc/puppetlabs/puppet/keys/public_key.pkcs7.pem'],
   }
 
+  file { '/etc/puppetlabs/puppet/keys/private_key.pkcs7.pem':
+    ensure => 'file',
+    mode => '0400',
+    require => Exec['createkeys'],
+  }
 
+  file { '/etc/puppetlabs/puppet/keys/public_key.pkcs7.pem':
+    ensure => 'file',
+    mode => '0400',
+    require => Exec['createkeys'],
+  }
+
+  file { '/etc/puppetlabs/puppet/keys/':
+    ensure => 'directory',
+    mode => '0500',
+    require => Exec['createkeys'],
+  }
 }

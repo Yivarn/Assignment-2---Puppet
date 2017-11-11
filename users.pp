@@ -29,7 +29,7 @@ class users{
         groups => ['sysadmin', 'cars'],
         managehome => true,
         uid => 10017699,
-        password => 'hiera',
+#        password => 'hiera',
         shell => '/bin/bash',
         require => Exec['bashrc'],
     }
@@ -40,7 +40,7 @@ class users{
         groups => ['cars', 'trucks'],
         managehome => true,
         uid => 10027699,
-        password => 'hiera',
+#        password => 'hiera',
         shell => '/bin/csh',
         require => Exec['bashrc'],
     }
@@ -51,7 +51,7 @@ class users{
         groups => ['cars', 'trucks', 'ambulances'],
         managehome => true,
         uid => 10037699,
-        password => 'hiera',
+#        password => hiera('profile::user::users:wilma:password:'),
         shell => '/bin/csh',
         require => Exec['bashrc'],
     }
