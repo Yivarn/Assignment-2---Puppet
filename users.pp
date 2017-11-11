@@ -1,50 +1,67 @@
-class users
-{
+class users{
+
+    exec { 'bashrc':
+      cwd => '/etc/skel/',
+      command => 'echo "export PATH=${PATH}:/usr/local/bin" >> .bashrc',
+      path => '/bin/',
+      unless => '/bin/cat /etc/skel/.bashrc | /bin/grep ":/usr/local/bin"',
+    }
+
     # Group Config:
-    group{ "cars":
+    group{ 'cars':
         ensure => present
     }
-    group{ "trucks":
+    group{ 'trucks':
         ensure => present
     }
-    group{ "ambulances":
+    group{ 'ambulances':
         ensure => present
     }
-    group{ "sysadmin":
+    group{ 'sysadmin':
         ensure => present
     }
     
     # User Config:
-    user { "becca":
-        name => "becca",
-	comment => "becca's account",
+    user { 'becca':
+        name => 'becca',
         ensure => present,
-        home => "/home/becca",
-        groups => ["sysadmin", "cars"],
-	managehome => true,
+        home => '/home/becca',
+        groups => ['sysadmin', 'cars'],
+        managehome => true,
         uid => 10017699,
-        shell => "/bin/bash",
+        password => 'hiera',
+        shell => '/bin/bash',
+        require => Exec['bashrc'],
     }
-    user { "fred":
-        name => "fred",
+    user { 'fred':
+        name => 'fred',
         ensure => present,
-        home => "/home/fred",
-        groups => ["cars", "trucks"],
-        #encrypted password ??
-        #uid => 10027699, # Required??
-	managehome => true,
-        shell => "/bin/csh"
+        home => '/home/fred',
+        groups => ['cars', 'trucks'],
+        managehome => true,
+        uid => 10027699,
+        password => 'hiera',
+        shell => '/bin/csh',
+        require => Exec['bashrc'],
     }
-    user { "wilma":
-        name => "wilma", # Needed?
+    user { 'wilma':
+        name => 'wilma',
         ensure => present,
-        home => "/home/wilma",
-        groups => ["cars", "trucks", "ambulances"],
-#password => pw_hash('password', 'SHA-512', 'mysalt'),
-        #encrypted password ??
+        home => '/home/wilma',
+        groups => ['cars', 'trucks', 'ambulances'],
+        managehome => true,
         uid => 10037699,
-	managehome => true,
-        shell => "/bin/csh"
-        #puppet managed ssh key ????
+        password => 'hiera',
+        shell => '/bin/csh',
+        require => Exec['bashrc'],
+    }
+
+    ssh_authorized_key { 'wilma_ssh_key':
+      ensure => present,
+      user   => 'wilma',
+      type   => 'ssh-rsa',
+      key    => 'Hiera',
+      require => User['wilma'],
     }
 }
+
