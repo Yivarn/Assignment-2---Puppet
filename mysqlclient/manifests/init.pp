@@ -5,7 +5,7 @@ class mysqlclient {
     'RedHat': { # if the operating system is RedHat
 
       package { 'mysql-community-client.x86_64':
-        ensure => 'installed',
+        ensure  => 'installed',
         require => Class['mysqlserver'], # Ensure the repo is installed
       }
 
